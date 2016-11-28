@@ -6,12 +6,9 @@ var hohohoElement = document.getElementById("coloredReindeer");
 
 var pairing = function() {
   var pair = "";
-  for(var i = 0; i < colors.length; i++) {
-    for(var j = 0; j < reindeer.length; j++) {
-      pair += "<li>" + colors[i] + " " + reindeer[j] + " </li>";
-    }
+  for(var i = 0; i < reindeer.length; i++) {
+    pair += "<li>" + colors[i] + " " + reindeer[i] + "</li>";
   }
-  debugger
   return pair;
 }
 hohohoElement.innerHTML = pairing();
